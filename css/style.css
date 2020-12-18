@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 20px;
+}
+
+.container {
+	width: 1140px;
+	margin: 30px auto;
+}
+
+.row:before, .row:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+.row {
+	margin: 40px auto;
+}
+
+ul li {
+	color: #fff;
+	padding: 10px 25px;
+	background: #2196f3;
+}
+
+ul li:hover {
+	cursor: pointer;
+}
+
+/* Copy CSS Staer */
+ul.filter {
+	list-style: none;
+	display: flex;
+	flex: 1;
+	gap: 20px;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.cp-grid {}
+.cp-grid-item {
+	width: calc(25% - 30px);
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 30px;
+}
+/* masonry not working when first item is hide so make the first item always visible */
+.cp-grid-item.first-item {
+	width: 1px !important;
+	height: 1 !important;
+	opacity: 0 !important;
+	visibility: hidden !important;
+	margin: 0 !important;
+	position: absolute;
+	z-index: -1;
+}
+.cp-grid-item img {
+	width: 100%;
+}
+/* Copy CSS End*/
