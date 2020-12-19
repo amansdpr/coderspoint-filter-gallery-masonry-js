@@ -52,7 +52,7 @@ ul.filter {
 /* masonry not working when first item is hide so make the first item always visible */
 .cp-grid-item.first-item {
 	width: 1px !important;
-	height: 1 !important;
+	height: 0 !important;
 	opacity: 0 !important;
 	visibility: hidden !important;
 	margin: 0 !important;
