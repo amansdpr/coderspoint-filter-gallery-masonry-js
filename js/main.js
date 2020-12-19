@@ -3,8 +3,11 @@
 	$( document ).ready(function() {
 	}); // document.ready 
 
-	
+
 	$(window).on('load', function(){
+
+	  	// $('#preloader').fadeOut();  
+
 
 		// Copy JS Start
 		let myGrid = $('.cp-grid')

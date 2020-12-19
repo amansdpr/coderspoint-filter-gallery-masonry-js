@@ -8,6 +8,25 @@ body {
 	font-size: 20px;
 }
 
+/* Preloader Start */
+#preloader {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 9999;
+	background: linear-gradient(0deg, #2c8dda, #009688);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 200%;
+}
+/* Preloader End */
+
+
+
 .container {
 	width: 1140px;
 	margin: 30px auto;
