@@ -6,7 +6,7 @@
 
 	$(window).on('load', function(){
 
-	  	// $('#preloader').fadeOut();  
+	  	$('#preloader').fadeOut();  
 
 
 		// Copy JS Start
