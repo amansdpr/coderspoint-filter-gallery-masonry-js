@@ -6,7 +6,8 @@
 
 	$(window).on('load', function(){
 
-	  	$('#preloader').fadeOut();  
+		// Preloader Js
+	  	$('#preloader').fadeOut()
 
 
 		// Copy JS Start
@@ -18,7 +19,7 @@
 			itemSelector: myGridItem,
 			columnWidth: myGridItem,
 		})
-		$('#filter > li').on('click', function(){
+		$('#cp-filter > li').on('click', function(){
 			let showme = $(this).attr('data-filter')
 			myGrid.children(myGridItem).show()
 			if (showme !== 'all') {
@@ -29,6 +30,11 @@
 				itemSelector: myGridItem,
 				columnWidth: myGridItem,
 			})
+
+			// for active filter li element
+			$(this).addClass('active').siblings('li').removeClass('active')
+
+
 		});
 		// Copy JS End
 

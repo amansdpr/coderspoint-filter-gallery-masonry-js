@@ -42,24 +42,29 @@ body {
 	margin: 40px auto;
 }
 
-ul li {
-	color: #fff;
-	padding: 10px 25px;
-	background: #2196f3;
-}
 
-ul li:hover {
-	cursor: pointer;
-}
+
 
 /* Copy CSS Staer */
-ul.filter {
+ul.cp-filter {
 	list-style: none;
 	display: flex;
 	flex: 1;
 	gap: 20px;
 	justify-content: center;
 	margin-bottom: 50px;
+}
+
+ul.cp-filter li {
+	color: #fff;
+	padding: 10px 25px;
+	background: #2196f3;
+}
+
+ul.cp-filter li.active,
+ul.cp-filter li:hover {
+	cursor: pointer;
+	background-color: #0b61a6;
 }
 .cp-grid {}
 .cp-grid-item {
