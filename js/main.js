@@ -1,8 +1,5 @@
 ;(function($){
     "use strict";
-	$( document ).ready(function() {
-	}); // document.ready 
-
 
 	$(window).on('load', function(){
 
@@ -23,7 +20,7 @@
 			let showme = $(this).attr('data-filter')
 			myGrid.children(myGridItem).show()
 			if (showme !== 'all') {
-				myGrid.children(':not(.' + showme + ')').hide()
+				myGrid.children(myGridItem).not('.' + showme ).not('.first-item').hide()
 			}
 			myGrid.removeClass('onload-masonry')
 			myGrid.masonry({

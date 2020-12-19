@@ -67,6 +67,7 @@ ul.cp-filter li:hover {
 	background-color: #0b61a6;
 }
 .cp-grid {}
+
 .cp-grid-item {
 	width: calc(25% - 30px);
 	margin-left: 15px;
