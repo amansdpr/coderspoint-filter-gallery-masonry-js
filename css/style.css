@@ -66,7 +66,10 @@ ul.cp-filter li:hover {
 	cursor: pointer;
 	background-color: #0b61a6;
 }
-.cp-grid {}
+
+.cp-grid {
+	transition: all 0.5s ease-out;
+}
 
 .cp-grid-item {
 	width: calc(25% - 30px);
